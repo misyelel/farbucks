@@ -1,0 +1,166 @@
+<html>
+    <html lang="en">
+    <head>
+       
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="../CSS/beverages.css">
+            <link rel="stylesheet" href="../CSS/style.css">
+            <!-- <link rel="stylesheet" href="../CSS/home.css"> -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="../JS/home.js"></script>
+            <title>Beverage</title>
+        </head>
+        <body>
+            <nav>
+                <div class="logo">
+                    <a href="./../index.html"><img src="../Assets/logo-svg.svg" alt=""></a>
+                </div>
+    
+                <div class="sub-menu" id="navmenus">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        
+                        <li> <a href="../index.html" >Home</a></li>
+                        <li> <a href="../HTML/about_us.html">About Us</a></li>
+                        <li> <a href="../HTML/events.html">Events</a></li>
+                        <li> <a href="../HTML/menu.html" class="active">Menu</a></li>
+                       
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <a class="register" href="register.html"><button>Register</button> </a>
+            </nav>
+            <h1>Beverage</h1>
+            <!-- menu atas -->
+
+            <div class="beverages">
+                <div class="row">
+                    <div class="beverageminuman">
+                        <img src="../Assets/product-1.svg">
+                        <p class="right">40k</p> 
+                        <h2 >Double Expresso</h2>
+                        <p>Pure coffe, abit bitter butssss lighten up your days!</p>
+                        <a href="https://www.gojek.com/en/th/gofood/"><button class="add-carts">Add to cart</button></a>
+                    </div>
+                    <div class="beverageminuman">
+                        <img src="../Assets/product-2.svg">
+                        <p class="right">40k</p>
+                        <h2>Mocha Frappuccino</h2>
+                        <p>This espresso-based drink is similar to a latte, but the frothy top layer is thicker.</p>
+                        <button class="add-carts">Add to cart</button></a>
+                    </div>
+                    <div class="beverageminuman">
+                        <img src="../Assets/product-3.svg">
+                        <p class="right">40k</p> 
+                        <h2>Iced Americano</h2>
+                        <p>Order this drink and you'll get a shot of espresso diluted with hot water!</p>
+                        <button class="add-carts">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- imageslider -->
+
+            <section>
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="imgss-btn" id="imgss1">
+                        <input type="radio" name="imgss-btn" id="imgss2">
+                        <input type="radio" name="imgss-btn" id="imgss3">
+                        <input type="radio" name="imgss-btn" id="imgss4">
+                        <div class="slide first">
+                            <img src="../Assets/20170508-Starbucks-banner.jpg" >
+                        </div>
+                        <div class="slide">
+                            <img src="../Assets/20211029-SBUX-Banner.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="../Assets/20220607-va-starbucks-banner.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="../Assets/starbucks_bca_12012022.jpg">
+                        </div>
+                        <div class="navigation-slider">
+                            <div class="autobtn1"></div>
+                            <div class="autobtn2"></div>
+                            <div class="autobtn3"> </div>
+                            <div class="autobtn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigationManual">
+                        <label for="imgss1" class="manualbtn"></label>
+                        <label for="imgss2" class="manualbtn"></label>
+                        <label for="imgss3" class="manualbtn"></label>
+                        <label for="imgss4" class="manualbtn"></label>
+                    </div>
+                   
+                </div>
+            
+            </section>
+
+            <!-- Menu bawah -->
+          
+            <div class="beverages">
+                <div class="row">
+                    <div class="beverageminuman">
+                        <img src="../Assets/doubleexpresso.jpg">
+                        <p class="right">40k</p>
+                        <h2>Double Expresso</h2>
+                        <p>Double the taste, double the fun!</p>
+                        <button class="add-carts">Add to cart</button></a>
+                    </div>
+                    <div class="beverageminuman">
+                        <img src="../Assets/expresso.jpg">
+                        <p class="right">40k</p>
+                        <h2>Espresso</h2>
+                        <p>more concentrated liquid and bolder flavor</p>
+                        <button class="add-carts">Add to cart</button></a>
+                    </div>
+                    <div class="beverageminuman">
+                        <img src="../Assets/latte.jpg">
+                        <p class="right">40k</p> 
+                        <h2>Latte</h2>
+                        <p>classic drink, for the first timer</p>
+                        <button class="add-carts">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            </section> 
+        </body>
+
+    </head>
+
+    <footer>
+        <span class="center-footer">All Right Reserved Farbucks © Farbucks</span>
+    </footer>
+
+</html>
+
+<script type="text/javascript">
+    var counter =1;
+    setInterval(function(){
+        document.getElementById("imgss" + counter).checked = true;
+        counter++;
+        if (counter >4){
+            counter = 1;
+        }
+    },5000);
+   </script>
+
+<script>
+    var navmenu = document.getElementById("navmenus");
+    
+    function showMenu(){
+        navmenus.style.right = "0";
+
+    }
+
+    function hideMenu(){
+        navmenus.style.right = "-200px";
+        
+    }
+
+</script>

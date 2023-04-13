@@ -1,0 +1,93 @@
+<html>
+    <html lang="en">
+    <head>
+       
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="../CSS/beverages.css">
+            <link rel="stylesheet" href="../CSS/style.css">
+            <!-- <link rel="stylesheet" href="../CSS/home.css"> -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="../JS/home.js"></script>
+            <title>Beverage</title>
+        </head>
+        <body>
+            <nav>
+                <div class="logo">
+                    <a href="./../index.html"><img src="../Assets/logo-svg.svg" alt=""></a>
+                </div>
+    
+                <div class="sub-menu" id="navmenus">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        
+                        <li> <a href="../index.html" >Home</a></li>
+                        <li> <a href="../HTML/about_us.html" >About Us</a></li>
+                        <li> <a href="../HTML/events.html" class="active">Events</a></li>
+                        <li> <a href="../HTML/menu.html" >Menu</a></li>
+                       
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <a class="register" href="register.html"><button>Register</button> </a>
+            </nav>
+            <h1>Events</h1>
+            <div class="events">
+                <div class="event">
+                    <h2> <span>Happy hour</span> </h2>
+                    <img  src="../Assets/happyhour.jpg">
+                    <p>We believe that morning is the best time to get a coffee! Starts at 06:00 - 08:00 all of our coffee is 20% LESS! </p>
+                </div>
+                <div class="event">
+                    <h2> <span>BCA</span> </h2>
+                    <img  src="../Assets/bca.jpg">
+                    <p>To celebrate our longest and greatest partner BCA , on the 65th BCA birthday,with BCA credit cards all of our menu are 50% off!</p>
+                </div>
+                <div class="event">
+                    
+                    <h2> <span> 1 on 1</span></h2>
+                    <img  src="../Assets/1on1.jfif">
+                    <p>Try our new specialy brewed and new kind of coffee now!  Don't forget to claim your free pastry without minimum purchase!!</p>
+                    
+                </div>
+                <div class="event">
+                    
+                    <h2> <span>Coffee Tasting</span> </h2>
+                    <img src="../Assets/freetasting.jpg">
+                    <p>Not so sure what kind of coffee you prefer? Ask our barista and we will give you free samples!  Also Come to any frabucks store in Indonesia every Wednesday, and ask your barista for a coffee talk session. Learn how easy it is to make a cup of great coffee at home using any of our great brewing equipment. Plus, we'll share tips on how to taste your coffee the right way - with a sniff, a slurp and a swirl.</p>
+                </div>
+            </div>
+        </body>
+    </head>
+    <footer>
+        <span class="center-footer">All Right Reserved Farbucks © Farbucks</span>
+    </footer>
+</html>
+
+<script type="text/javascript">
+    var counter =1;
+    setInterval(function(){
+        document.getElementById("imgss" + counter).checked = true;
+        counter++;
+        if (counter >4){
+            counter = 1;
+        }
+    },5000);
+   </script>
+
+<script>
+    var navmenu = document.getElementById("navmenus");
+    
+    function showMenu(){
+        navmenus.style.right = "0";
+
+    }
+
+    function hideMenu(){
+        navmenus.style.right = "-200px";
+        
+    }
+
+</script>

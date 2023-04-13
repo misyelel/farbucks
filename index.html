@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- <script src="./JS/home.js"></script> -->
+
+    <script defer src="./JS/slider.js"></script>
+
+    <title>Farbucks</title>
+</head>
+
+<body>
+    <div class="landing-page">
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><img src="../Assets/logo-svg.svg" alt=""></a>
+            </div>
+
+            <div class="sub-menu" id="navmenus">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    
+                    <li> <a href="../index.html" class="active">Home</a></li>
+                    <li> <a href="HTML/about_us.html">About Us</a></li>
+                    <li> <a href="HTML/events.html">Events</a></li>
+                    <li> <a href="HTML/menu.html" >Menu</a></li>
+                   
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <a class="register" href="./HTML/register.html"><button>Register</button> </a>
+        </nav>
+        <!-- <nav>
+            <div class="logo">
+                <a href="index.html"><img src="./Assets/logo-svg.svg" alt=""></a>
+            </div>
+            
+            <ul class="sub-menu">
+                <li> <a href="./index.html" class="active">Home</a></li>
+                <li> <a href="./HTML/about_us.html">About Us</a></li>
+                <li> <a href="./HTML/events.html">Events</a></li>
+                <li> <a href="./HTML/menu.html">Menu</a></li>
+            </ul>
+    
+            <a class="register" href="./HTML/register.html"><button>Register</button> </a>
+        </nav> -->
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>The Most <br> Authentic Taste</h1>
+                <p>All of our coffe are freshly grinded every single day to ensure the quality and the taste for the
+                    best coffee experience only for you!</p>
+                <a href="./HTML/menu.html"><button>Shop now</button></a>
+            </div>
+            <div class="hero-img">
+                <img src="./Assets/cup-coffee-landing.svg" alt="">
+            </div>
+        </div>
+
+        <div class="mission-content">
+            <h2><span>Mission</span></h2>
+            <p>Farbucks was founded by dedicated owners who struggle to find the most authentic way to brew coffee in
+                Indonesia. They believe that to serve the best coffee it will take a lot of time and effort. Farbucks
+                here to serve you the most original and scrumptious coffee you can possibly get.
+                Roasted with care and grinded with precision, we can guarantee that our coffee is the best in Indonesia,
+                even the world.
+            </p>
+        </div>
+
+        <div class="best-selling-content">
+            <h2>Our Best Selling Products</h2>
+            <div class="best-selling-products">
+                <div class="product-card">
+                    <img src="./Assets/product-1.svg" alt="">
+                    <div class="card-content">
+                        <h4 class="left">Vanilla Cream Latte</h4>
+                        <p class="right"><i>40k</i></p>
+                        <a href="https://www.gojek.com/en/th/gofood/"><button class="add-cart">Add to cart</button></a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./Assets/product-2.svg" alt="">
+                    <div class="card-content">
+                        <h4 class="left">Mocha Frappuccino</h4>
+                        <p class="right"><i>60k</i></p>
+                        <a href="https://www.gojek.com/en/th/gofood/"><button class="add-cart">Add to cart</button></a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./Assets/product-4.svg" alt="">
+                    <div class="card-content">
+                        <h4 class="left">Espresso</h4>
+                        <p class="right"><i>40k</i></p>
+                        <a href="https://www.gojek.com/en/th/gofood/"><button class="add-cart">Add to cart</button></a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./Assets/product-3.svg" alt="">
+                    <div class="card-content">
+                        <h4 class="left">Iced Americano</h4>
+                        <p class="right"><i>20k</i></p>
+                        <a href="https://www.gojek.com/en/th/gofood/"><button class="add-cart">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event-content Desktop -->
+        <div class="event-content display-none-mobile">
+            <h2><span>Ongoing Events</span></h2>
+
+            <div class="event-images">
+                <div class="slider-desk">
+                    <img class="img-event" src="./Assets/slider1.svg" alt="">
+                    <img class="img-event" src="./Assets/slider2.svg" alt="">
+                    <img class="img-event" src="./Assets/slider3.svg" alt="">
+
+                </div>
+                <div class="slider-desk">
+                    <img class="img-event" src="./Assets/slider 4.svg" alt="">
+                    <img class="img-event" src="./Assets/slider 5.svg" alt="">
+                    <img class="img-event" src="./Assets/slider 6.svg" alt="">
+                </div>
+                <div class="slider-desk">
+                    <img class="img-event" src="./Assets/slider 7.svg" alt="">
+                    <img class="img-event" src="./Assets/slider 8.svg" alt="">
+                    <img class="img-event" src="./Assets/slider 9.svg" alt="">
+                </div>
+                <a onclick="plusSlides2(-1)"><img class="prev-button" src="./Assets/slide-button2.svg" alt=""></a>
+                <a onclick="plusSlides2(1)"><img class="next-button" src="./Assets/slide-button.svg" alt=""></a>
+            </div>
+        </div>
+
+        <!-- Event-content Mobile -->
+        <div class="event-content display-block-mobile">
+            <h2><span>Ongoing Events</span></h2>
+            <div class="event-images">
+                <div class="slider">
+                    <img class="img-event" src="./Assets/slider1.svg" alt="">
+                </div>
+                <div class="slider">
+                    <img class="img-event" src="./Assets/slider2.svg" alt="">
+                </div>
+                <div class="slider">
+                    <img class="img-event" src="./Assets/slider3.svg" alt="">
+                </div>
+                <a onclick="plusSlides(-1)"><img class="prev-button" src="./Assets/slide-button2.svg" alt=""></a>
+                <a onclick="plusSlides(1)"><img class="next-button" src="./Assets/slide-button.svg" alt=""></a>
+            </div>
+        </div>
+
+        <footer>
+            <span class="center-footer">All Right Reserved Farbucks © Farbucks</span>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<html>
+    <html lang="en">
+    <head>
+       
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="../CSS/beverages.css">
+            <link rel="stylesheet" href="../CSS/style.css">
+            <!-- <link rel="stylesheet" href="../CSS/home.css"> -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="../JS/home.js"></script>
+            <title>Beverage</title>
+        </head>
+        <body>
+            <nav>
+                <div class="logo">
+                    <a href="./../index.html"><img src="../Assets/logo-svg.svg" alt=""></a>
+                </div>
+    
+                <div class="sub-menu" id="navmenus">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        
+                        <li> <a href="../index.html" >Home</a></li>
+                        <li> <a href="../HTML/about_us.html" class="active">About Us</a></li>
+                        <li> <a href="../HTML/events.html">Events</a></li>
+                        <li> <a href="../HTML/menu.html" >Menu</a></li>
+                       
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <a class="register" href="register.html"><button>Register</button> </a>
+            </nav>
+            <h1>History Background</h1>
+            <div class="history">
+                <div class="year year-kiri">
+                    <img class="left" src="../Assets/history1.png">
+                    <img class="left" src="../Assets/history2.png">
+                    <div class="isihistory">
+                        <h2 class="right">2020</h2>
+                        <p>first shop opened in july 2020! we are so excited
+                            to serve all of indonesian who struggling to find the best place to sit ,chill , and drink coffee!. Our team ensure you that we will bring you the best and the most authentic coffee that you can imagine.</p>
+                    </div>
+                </div>
+                <div class="year year-kanan">
+                    
+                    <div class="isihistory">
+                        <h2 class="right">2021</h2>
+                        <p>After a booming success in 2020, we decided to open up 6 more coffee shop around Indonesia. Including Java,Sumatera, and Bali. We also added a new region specialty drink in each coffee shop to satisfied your coffee and curiosity needs!</p>
+                    </div>
+                    <img class="left" src="../Assets/history3.png">
+                    <img class="left" src="../Assets/history4.png">
+                </div>
+                <div class="year year-kiri">
+                    <img class="left" src="../Assets/history5.png">
+                    <img class="left" src="../Assets/history6.png">
+                    <div class="isihistory">
+                        <h2 class="right">2022</h2>
+                        <p>As Indonesian Coffee are being loved All around the worild,  We opened a new branch in Singapore!. All of our coffee are imported from local farmers in Indoensia to ensure the authenticty of our coffee so our aborad customer can enjoy them too!</p>
+                    </div>
+                </div>
+            </div>
+
+                <!-- inovation -->
+
+            <div class="inovation">
+                <h1>Innovation</h2>
+                <img class="left" src="../Assets/tumblr.jpg">
+                <p>Our company also concern about the enviroment! <br> Please bring your own tumblr and you will get 20% off for your drinks! <br> We also have alot of appealing tumblr that the customers can buy as a gift or self use!
+                </p>
+            </div>
+
+            <!-- our team -->
+            <h1> Meet Our Team</h1>
+            <div class="team">
+                <div class="owners">
+                    <img src="../Assets/owner1.png">
+                    <div class="layer">
+                        <p>Founder<br>Natasha Grace</p>
+                    </div>
+                </div>
+                <div class="owners">
+                    <img src="../Assets/owner2.png">
+                    <div class="layer">
+                        <p>Co-Founder<br>Angelica Haidun</p>
+                    </div>
+                </div>
+                <div class="owners">
+                    <img src="../Assets/owner3.png">
+                    <div class="layer">
+                        <p>Head of Marketing<br>Clara Berthen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <div class="owners">
+                    <img src="../Assets/owner4.png">
+                    <div class="layer">
+                        <p>Co-Founder <br>Budi Nughroho</p>
+                    </div>
+                </div>
+                <div class="owners">
+                    <img src="../Assets/owner5.png">
+                    <div class="layer">
+                        <p>Owner<br>Supriadi Djaya</p>
+                    </div>
+                </div>
+                <div class="owners">
+                    <img src="../Assets/owner6.png">
+                    <div class="layer">
+                        <p>Co-Owner <br>Michael Santosa</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </body>
+    </head>
+    <footer>
+        <span class="center-footer">All Right Reserved Farbucks © Farbucks</span>
+    </footer>
+</html>
+
+<script type="text/javascript">
+    var counter =1;
+    setInterval(function(){
+        document.getElementById("imgss" + counter).checked = true;
+        counter++;
+        if (counter >4){
+            counter = 1;
+        }
+    },5000);
+   </script>
+
+<script>
+    var navmenu = document.getElementById("navmenus");
+    
+    function showMenu(){
+        navmenus.style.right = "0";
+
+    }
+
+    function hideMenu(){
+        navmenus.style.right = "-200px";
+        
+    }
+
+</script>

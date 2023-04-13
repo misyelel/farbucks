@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <script defer src="../JS/register.js"></script>
+    <title>Registration Page</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="./../index.html"><img src="../Assets/logo-panjang.svg" alt=""></a>
+
+        <div class="container-form">
+            <form id="form" action="" onsubmit="return validation()">
+                <!-- <div id="errorbox"></div>  -->
+                <div class="form-box ">
+                    <span class="form-title">Full name</span>
+                    <input type="text" id="name" placeholder="Enter your full name here" >
+                    <small>Error!</small>
+                </div>
+                <div class="form-box ">
+                    <span class="form-title">Email</span>
+                    <input type="email" id="email" placeholder="Enter your email here">
+                    <small>Error!</small>
+                </div>
+                <div class="form-box">
+                    <span class="form-title">Password</span>
+                    <input type="password"  id="password" placeholder="Enter your password here">
+                    <small>Error!</small>
+                </div>
+                <div class="form-box">
+                    <span class="form-title">Address</span>
+                    <textarea name="address" id="address" cols="30" rows="3"
+                        placeholder="Enter your address here"></textarea>
+                    <small>Error!</small>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="tc" onclick="checked">
+                    <label class="tc-text" for="tc">By signing up I agree with Farbuck’s <b>Terms and Condition</b></label>
+                </div>
+                <div>
+                    <input type="submit" class="form-box-button" id="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+</body>
+
+</html>
